@@ -1,0 +1,74 @@
+﻿@model KnowYourRep.Models.Representative
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Representative</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RepName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RepName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Office)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Office)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Education)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Education)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Experience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Experience)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Affiliation.PartyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Affiliation.PartyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.District.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.District.Location)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RepID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
